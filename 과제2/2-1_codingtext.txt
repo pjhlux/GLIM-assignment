@@ -1,0 +1,17 @@
+// 2-1. 양꼬치
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n, int k) {
+    int answer = 0;
+    
+    const int PRICE_YANG = 12000;
+    const int PRICE_DRINK = 2000;
+    const int SERVICE_CUT = 10;
+    
+    answer = n * PRICE_YANG + k * PRICE_DRINK - (n / SERVICE_CUT) * PRICE_DRINK;
+    
+    return answer;
+}
