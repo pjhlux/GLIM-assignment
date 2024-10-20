@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int solution(vector<string> vStrOrder) {
+int solution(vector<string> vStrOrder)
+{
     int answer = 0;
     
     const unsigned int PRICE_AMERICANO = 4500;
