@@ -4,7 +4,8 @@
 
 using namespace std;
 
-int solution(int n, int k) {
+int solution(int n, int k)
+{
     int answer = 0;
     
     const int PRICE_YANG = 12000;
