@@ -1,0 +1,14 @@
+// 2-2. 접두사인지 확인하기
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(string sMyString, string sIsPrefix) {
+    int answer = 0;
+    
+    if(sMyString.find(sIsPrefix) == 0)
+        return 1;
+    else
+        return 0;
+}

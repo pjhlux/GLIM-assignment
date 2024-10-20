@@ -1,0 +1,28 @@
+// 2-3. 커피 심부름
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<string> vStrOrder) {
+    int answer = 0;
+    
+    const unsigned int PRICE_AMERICANO = 4500;
+    const unsigned int PRICE_LATTE =     5000;
+    const unsigned int PRICE_ANY =       PRICE_AMERICANO;
+    
+    for(auto item : vStrOrder)
+    {
+        if(item.find("americano") != string::npos) {
+            answer +=  PRICE_AMERICANO;
+        }
+        else if(item.find("latte") != string::npos) {
+            answer +=  PRICE_LATTE;
+        }
+        else if(item.find("anything") != string::npos) {
+            answer +=  PRICE_ANY;
+        }
+    }
+    
+    return answer;
+}
