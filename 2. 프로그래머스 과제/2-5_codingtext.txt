@@ -4,11 +4,12 @@
 
 using namespace std;
 
-int solution(vector<vector<int>> vvIntBoard, int nK) {
+int solution(vector<vector<int>> vvIntBoard, int nK)
+{
     int answer = 0;
     
-    for(size_t j = 0; j<vvIntBoard.size(); j++) {
-        for(size_t i=0; i<vvIntBoard[j].size(); i++) 
+    for(size_t j = 0; j < vvIntBoard.size(); j++) {
+        for(size_t i = 0; i < vvIntBoard[j].size(); i++) 
         {
             if(i + j <= nK) {
                 answer += vvIntBoard[j][i];
